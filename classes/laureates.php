@@ -35,7 +35,6 @@ class laureates
         $this->diedCity = $object->diedCity;
         $this->gender = $object->gender;
     }
-
     /**
      * @return mixed
      */
@@ -43,7 +42,6 @@ class laureates
     {
         return $this->id;
     }
-
     /**
      * @return mixed
      */
@@ -51,7 +49,6 @@ class laureates
     {
         return $this->firstname;
     }
-
     /**
      * @return mixed
      */
@@ -59,7 +56,6 @@ class laureates
     {
         return $this->surname;
     }
-
     /**
      * @return mixed
      */
@@ -67,7 +63,6 @@ class laureates
     {
         return $this->born;
     }
-
     /**
      * @return mixed
      */
@@ -75,7 +70,6 @@ class laureates
     {
         return $this->died;
     }
-
     /**
      * @return mixed
      */
@@ -83,7 +77,6 @@ class laureates
     {
         return $this->bornCountry;
     }
-
     /**
      * @return mixed
      */
@@ -91,7 +84,6 @@ class laureates
     {
         return $this->bornCountryCode;
     }
-
     /**
      * @return mixed
      */
@@ -99,7 +91,6 @@ class laureates
     {
         return $this->bornCity;
     }
-
     /**
      * @return mixed
      */
@@ -107,7 +98,6 @@ class laureates
     {
         return $this->diedCountry;
     }
-
     /**
      * @return mixed
      */
@@ -115,7 +105,6 @@ class laureates
     {
         return $this->diedCountryCode;
     }
-
     /**
      * @return mixed
      */
@@ -123,7 +112,6 @@ class laureates
     {
         return $this->diedCity;
     }
-
     /**
      * @return mixed
      */
@@ -131,7 +119,6 @@ class laureates
     {
         return $this->gender;
     }
-
     public function print_info()
     {
         print_t(get_object_vars($this));
