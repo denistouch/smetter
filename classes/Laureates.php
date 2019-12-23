@@ -1,7 +1,7 @@
 <?php
 
 
-class laureates
+class Laureates
 {
     private $id;
     private $firstname;
@@ -23,18 +23,19 @@ class laureates
     public function __construct($object)
     {
         $this->id = $object->id;
-        $this->firstname = $object->firstname;
-        $this->surname = $object->surname;
-        $this->born = $object->born;
-        $this->died = $object->died;
-        $this->bornCountry = $object->bornCountry;
-        $this->bornCountryCode = $object->bornCountryCode;
-        $this->bornCity = $object->bornCity;
-        $this->diedCountry = $object->diedCountry;
-        $this->diedCountryCode = $object->diedCountryCode;
-        $this->diedCity = $object->diedCity;
-        $this->gender = $object->gender;
+        $this->firstname = addslashes($object->firstname);
+        $this->surname = addslashes($object->surname);
+        $this->born = addslashes($object->born);
+        $this->died = addslashes($object->died);
+        $this->bornCountry = addslashes($object->bornCountry);
+        $this->bornCountryCode = addslashes($object->bornCountryCode);
+        $this->bornCity = addslashes($object->bornCity);
+        $this->diedCountry = addslashes($object->diedCountry);
+        $this->diedCountryCode = addslashes($object->diedCountryCode);
+        $this->diedCity = addslashes($object->diedCity);
+        $this->gender = addslashes($object->gender);
     }
+
     /**
      * @return mixed
      */
@@ -42,6 +43,7 @@ class laureates
     {
         return $this->id;
     }
+
     /**
      * @return mixed
      */
@@ -49,6 +51,7 @@ class laureates
     {
         return $this->firstname;
     }
+
     /**
      * @return mixed
      */
@@ -56,6 +59,7 @@ class laureates
     {
         return $this->surname;
     }
+
     /**
      * @return mixed
      */
@@ -63,6 +67,7 @@ class laureates
     {
         return $this->born;
     }
+
     /**
      * @return mixed
      */
@@ -70,6 +75,7 @@ class laureates
     {
         return $this->died;
     }
+
     /**
      * @return mixed
      */
@@ -77,6 +83,7 @@ class laureates
     {
         return $this->bornCountry;
     }
+
     /**
      * @return mixed
      */
@@ -84,6 +91,7 @@ class laureates
     {
         return $this->bornCountryCode;
     }
+
     /**
      * @return mixed
      */
@@ -91,6 +99,7 @@ class laureates
     {
         return $this->bornCity;
     }
+
     /**
      * @return mixed
      */
@@ -98,6 +107,7 @@ class laureates
     {
         return $this->diedCountry;
     }
+
     /**
      * @return mixed
      */
@@ -105,6 +115,7 @@ class laureates
     {
         return $this->diedCountryCode;
     }
+
     /**
      * @return mixed
      */
@@ -112,6 +123,7 @@ class laureates
     {
         return $this->diedCity;
     }
+
     /**
      * @return mixed
      */
@@ -119,8 +131,15 @@ class laureates
     {
         return $this->gender;
     }
+
     public function print_info()
     {
         print_t(get_object_vars($this));
+    }
+
+    public function get_values_for_sql()
+    {
+        return "($this->id,'$this->firstname','$this->surname','$this->born','$this->died','$this->bornCountry','$this->bornCountryCode','$this->bornCity','$this->diedCountry','$this->diedCountryCode','$this->diedCity','$this->gender')";
+        //return '('.$this->id.','.''.$this->firstname.','.$this->surname.','.$this->born.','.$this->died.','.$this->bornCountry.','.$this->bornCountryCode.','.$this->bornCity.','.$this->diedCountry.','.$this->diedCountryCode.','.$this->diedCity.','.$this->gender.')';
     }
 }
