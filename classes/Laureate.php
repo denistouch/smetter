@@ -1,5 +1,5 @@
 <?php
-include "Prizes.php";
+include "Prize.php";
 
 class Laureate
 {
@@ -35,6 +35,10 @@ class Laureate
         $this->diedCountryCode = addslashes($object->diedCountryCode);
         $this->diedCity = addslashes($object->diedCity);
         $this->gender = addslashes($object->gender);
+        $this->prizes = array();//$object->prizes;
+        for ($i = 0;$i < count($object->prizes); $i++) {
+            array_push($this->prizes,new Prize($object->prizes[$i],$i,$this->id));
+        }
     }
 
     /**
