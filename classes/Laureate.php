@@ -1,7 +1,7 @@
 <?php
+include "Prizes.php";
 
-
-class Laureates
+class Laureate
 {
     private $id;
     private $firstname;
@@ -15,9 +15,10 @@ class Laureates
     private $diedCountryCode;
     private $diedCity;
     private $gender;
+    private $prizes;
 
     /**
-     * laureates constructor.
+     * Laureate constructor.
      * @param $object
      */
     public function __construct($object)
@@ -130,6 +131,14 @@ class Laureates
     public function getGender()
     {
         return $this->gender;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPrizes()
+    {
+        return $this->prizes;
     }
 
     public function print_info()
