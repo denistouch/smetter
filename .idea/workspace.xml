@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="success insert into laureats table(last)">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Affiliation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Affiliations Schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Laureates Schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Prizes Schema" afterDir="false" />
+    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Laureate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Prize.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Prize.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/date_valid.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/date_valid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print_lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/print_lib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Connection.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +141,7 @@
       <workItem from="1577067833495" duration="1174000" />
       <workItem from="1577069135397" duration="23264000" />
       <workItem from="1577095770645" duration="764000" />
-      <workItem from="1577265708759" duration="27255000" />
+      <workItem from="1577265708759" duration="31706000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -201,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577285229714</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created workspace function">
+      <created>1577295731608</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577295731609</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +225,7 @@
     <MESSAGE value="success insert into laureats table(last)" />
     <MESSAGE value="success insert into laureates table(last)" />
     <MESSAGE value="date validation library create" />
-    <option name="LAST_COMMIT_MESSAGE" value="date validation library create" />
+    <MESSAGE value="created workspace function" />
+    <option name="LAST_COMMIT_MESSAGE" value="created workspace function" />
   </component>
 </project>

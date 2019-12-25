@@ -1,6 +1,5 @@
 <?php
 include "Prize.php";
-//include "lib/date_valid.php";
 
 class Laureate
 {
@@ -41,114 +40,12 @@ class Laureate
             array_push($this->prizes,new Prize($object->prizes[$i],$i,$this->id));
         }
     }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFirstname()
-    {
-        return $this->firstname;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getSurname()
-    {
-        return $this->surname;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getBorn()
-    {
-        return $this->born;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDied()
-    {
-        return $this->died;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getBornCountry()
-    {
-        return $this->bornCountry;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getBornCountryCode()
-    {
-        return $this->bornCountryCode;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getBornCity()
-    {
-        return $this->bornCity;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDiedCountry()
-    {
-        return $this->diedCountry;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDiedCountryCode()
-    {
-        return $this->diedCountryCode;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDiedCity()
-    {
-        return $this->diedCity;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getGender()
-    {
-        return $this->gender;
-    }
-
     /**
      * @return int
      */
     public function getPrizes()
     {
         return $this->prizes;
-    }
-
-    public function print_info()
-    {
-        print_t(get_object_vars($this));
     }
 
     public function get_values_for_sql()

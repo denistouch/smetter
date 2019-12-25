@@ -17,6 +17,9 @@ function insert_into_table($table_name = '',$values = '')
     }
 }
 
+/**
+ * Creating tables and insert rows from JSON file
+ */
 function create_workspace() {
     echo "Connection...";
     $mysqli = new mysqli(servername,username,password,database);
@@ -25,24 +28,28 @@ function create_workspace() {
         return;
     }
     echo "<br>Connected with ".database;
+
     $query = file_get_contents("sql/Laureates Schema");
     if (!$mysqli->query($query)) {
         echo "Не удалось создать таблицу: (" . $mysqli->errno . ") " . $mysqli->error;
         return;
     }
     echo "<br>Laureates Schema created";
+
     $query = file_get_contents("sql/Prizes Schema");
     if (!$mysqli->query($query)) {
         echo "Не удалось создать таблицу: (" . $mysqli->errno . ") " . $mysqli->error;
         return;
     }
     echo "<br>Prizes Schema created";
+
     $query = file_get_contents("sql/Affiliations Schema");
     if (!$mysqli->query($query)) {
         echo "Не удалось создать таблицу: (" . $mysqli->errno . ") " . $mysqli->error;
         return;
     }
     echo "<br>Affiliations Schema created";
+
     $json = file_get_contents("json/laureate.json");
     $input = json_decode($json)->laureates;
     $sql_laureates_values_array = array();
@@ -58,17 +65,21 @@ function create_workspace() {
             }
         }
     }
+
     foreach ($sql_laureates_values_array as $value) {
         insert_into_table("laureates", $value);
     }
-    echo "<br>Laureates row inserted";
+    echo "<br>Laureates rows inserted";
+
     foreach ($sql_prizes_values_array as $value) {
         insert_into_table("prizes", $value);
     }
-    echo "<br>Prizes row inserted";
+    echo "<br>Prizes rows inserted";
+
     foreach ($sql_affiliations_values_array as $value) {
         insert_into_table("affiliations", $value);
     }
-    echo "<br>Affiliations row inserted";
+    echo "<br>Affiliations rows inserted";
+
     echo '<br>Success!';
 }
