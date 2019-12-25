@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/classes/Connection.php" afterDir="false" />
+    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="success insert into laureats table(last)">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/Affiliation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Affiliations Schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Laureates Schema" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Prizes Schema" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/laureates.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Laureates.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Laureate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Prize.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Prize.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laureate.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/laureate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/date_valid.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/date_valid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/print_lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/print_lib.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +39,29 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smetter: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="bfdef157-046b-40c1-8bd5-999d5b7fbe28" />
+    </checked>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,9 +78,12 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/json" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\smetter\lib" />
+      <recent name="C:\xampp\htdocs\smetter\sql" />
       <recent name="C:\xampp\htdocs\smetter\json" />
       <recent name="C:\xampp\htdocs\smetter\classes" />
       <recent name="C:\xampp\htdocs" />
@@ -79,6 +111,32 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.120671" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@82eecf34" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@82eecf34" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4add4d44" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@82eecf34" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@429b6402" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -90,7 +148,9 @@
       <option name="presentableId" value="Default" />
       <updated>1577067830299</updated>
       <workItem from="1577067833495" duration="1174000" />
-      <workItem from="1577069135397" duration="19791000" />
+      <workItem from="1577069135397" duration="23264000" />
+      <workItem from="1577095770645" duration="764000" />
+      <workItem from="1577265708759" duration="27255000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -106,7 +166,42 @@
       <option name="project" value="LOCAL" />
       <updated>1577078077027</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="success insert into laureats table">
+      <created>1577090722079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577090722079</updated>
+    </task>
+    <task id="LOCAL-00004" summary="success insert into laureates table(last)">
+      <created>1577274505895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577274505895</updated>
+    </task>
+    <task id="LOCAL-00005" summary="true schema for sql table">
+      <created>1577281453447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577281453447</updated>
+    </task>
+    <task id="LOCAL-00006" summary="success insert into laureates table(last)">
+      <created>1577281482273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577281482273</updated>
+    </task>
+    <task id="LOCAL-00007" summary="date validation library create">
+      <created>1577285229714</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577285229714</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +212,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -125,6 +222,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="success insert into laureats table" />
+    <MESSAGE value="true schema for sql table" />
+    <MESSAGE value="success insert into laureats table(last)" />
+    <MESSAGE value="success insert into laureates table(last)" />
+    <MESSAGE value="date validation library create" />
+    <option name="LAST_COMMIT_MESSAGE" value="date validation library create" />
   </component>
 </project>

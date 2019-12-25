@@ -1,5 +1,6 @@
 <?php
 include "Prize.php";
+//include "lib/date_valid.php";
 
 class Laureate
 {
@@ -26,8 +27,8 @@ class Laureate
         $this->id = $object->id;
         $this->firstname = addslashes($object->firstname);
         $this->surname = addslashes($object->surname);
-        $this->born = addslashes($object->born);
-        $this->died = addslashes($object->died);
+        $this->born = dateValid($object->born);
+        $this->died = dateValid($object->died);
         $this->bornCountry = addslashes($object->bornCountry);
         $this->bornCountryCode = addslashes($object->bornCountryCode);
         $this->bornCity = addslashes($object->bornCity);
