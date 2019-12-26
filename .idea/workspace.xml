@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/Categories List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Countries List" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Result in Table" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Years List" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +138,7 @@
       <workItem from="1577069135397" duration="23264000" />
       <workItem from="1577095770645" duration="764000" />
       <workItem from="1577265708759" duration="31756000" />
-      <workItem from="1577337971122" duration="9819000" />
+      <workItem from="1577337971122" duration="10139000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -215,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577338388896</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="last version">
+      <created>1577354965928</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1577354965928</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
