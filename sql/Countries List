@@ -1,0 +1,3 @@
+SELECT affiliations.country
+FROM affiliations
+GROUP BY affiliations.country
