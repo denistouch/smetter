@@ -41,7 +41,7 @@ class Laureate
         }
     }
     /**
-     * @return int
+     * @return array
      */
     public function getPrizes()
     {
@@ -51,6 +51,5 @@ class Laureate
     public function get_values_for_sql()
     {
         return "($this->id,'$this->firstname','$this->surname','$this->born','$this->died','$this->bornCountry','$this->bornCountryCode','$this->bornCity','$this->diedCountry','$this->diedCountryCode','$this->diedCity','$this->gender')";
-        //return '('.$this->id.','.''.$this->firstname.','.$this->surname.','.$this->born.','.$this->died.','.$this->bornCountry.','.$this->bornCountryCode.','.$this->bornCity.','.$this->diedCountry.','.$this->diedCountryCode.','.$this->diedCity.','.$this->gender.')';
     }
 }

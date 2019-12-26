@@ -38,4 +38,5 @@ class Prize
     {
         return "(NULL,'$this->year','$this->category',$this->share,'$this->motivation',$this->laureate_id,$this->laureate_prize_number)";
     }
+
 }
