@@ -5,5 +5,6 @@ WHERE laureates.id = prizes.laureate_id
   AND year LIKE ':year'
   AND category LIKE ':category'
   AND bornCountry LIKE ':country'
+  AND laureates.deleted = 0
 GROUP BY laureates.id
 LIMIT :start , 50

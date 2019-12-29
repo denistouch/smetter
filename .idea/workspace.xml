@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/laureate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Affiliation.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Affiliation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Laureate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Prize.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Prize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ajax_query.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/Affiliations Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Affiliations Schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/Laureates Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureates Schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/Prizes Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Prizes Schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Result in Table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Result in Table.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +48,13 @@
         <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="smetter: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smetter: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="laureates: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -158,7 +163,7 @@
       <workItem from="1577337971122" duration="23731000" />
       <workItem from="1577369202093" duration="5678000" />
       <workItem from="1577450030343" duration="945000" />
-      <workItem from="1577506016823" duration="42610000" />
+      <workItem from="1577506016823" duration="43651000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -272,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577615158449</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="last version all worked">
+      <created>1577619189898</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1577619189898</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

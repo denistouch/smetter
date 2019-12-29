@@ -12,5 +12,5 @@ CREATE TABLE IF NOT EXISTS `smetter`.`laureates`
     `diedCountryCode` TEXT            NULL,
     `diedCity`        TEXT            NULL,
     `gender`          TEXT            NULL,
-    `deleted`         BOOLEAN         NULL
+    `deleted`         BOOLEAN         NOT NULL
 );

@@ -159,7 +159,9 @@ include 'classes/Laureate.php';
         console.log($(this).attr('id') + ' click');
         $('#resultTable').attr('data-start', 0);
         ajaxLoadTable();
-        $('.navbar-toggler').click();
+        if ($('#navbarSupportedContent').hasClass('show')) {
+            $('.navbar-toggler').click();
+        }
     });
 </script>
 </body>

@@ -20,6 +20,6 @@ class Affiliation
 
     public function get_values_for_sql()
     {
-        return "(NULL,'$this->name','$this->city','$this->country',$this->laureate_id,$this->laureate_prize_number,NULL)";
+        return "(NULL,'$this->name','$this->city','$this->country',$this->laureate_id,$this->laureate_prize_number,0)";
     }
 }
