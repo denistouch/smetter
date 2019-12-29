@@ -36,7 +36,7 @@ class Prize
 
     public function get_values_for_sql()
     {
-        return "(NULL,'$this->year','$this->category',$this->share,'$this->motivation',$this->laureate_id,$this->laureate_prize_number)";
+        return "(NULL,'$this->year','$this->category',$this->share,'$this->motivation',$this->laureate_id,$this->laureate_prize_number,NULL)";
     }
 
 }

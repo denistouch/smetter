@@ -4,7 +4,6 @@ include 'lib/print_lib.php';
 include 'lib/date_valid.php';
 include 'lib/connection.php';
 include 'classes/Laureate.php';
-
 //create_workspace();
 ?>
 <!doctype html>

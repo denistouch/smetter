@@ -40,36 +40,37 @@ function get_modal($id)
                         <div class=\"col-sm\">
                             <ul class=\"list-group\">
                                 <li class=\"list-group-item\">
-                                    name <span class=\"badge badge-pill\">" . $value[1] . "</span>
+                                    name : " . $value[1] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    surname <span class=\"badge  badge-pill\">" . $value[2] . "</span></li>
+                                    surname : " . $value[2] . "
+                                    </li>
                                 <li class=\"list-group-item\">
-                                    born <span class=\"badge  badge-pill\">" . $value[3] . "</span>
+                                    born : " . $value[3] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    bornCountry <span class=\"badge  badge-pill\">" . $value[5] . "</span>
+                                    bornCountry : " . $value[5] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    bornCountryCode <span class=\"badge  badge-pill\">" . $value[6] . "</span>
+                                    bornCountryCode : " . $value[6] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    bornCity <span class=\"badge  badge-pill\">" . $value[7] . "</span>
+                                    bornCity : " . $value[7] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    died <span class=\"badge  badge-pill\">" . $value[4] . "</span>
+                                    died : " . $value[4] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    diedCountry <span class=\"badge  badge-pill\">" . $value[8] . "</span>
+                                    diedCountry : " . $value[8] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    diedCountryCode <span class=\"badge  badge-pill\">" . $value[9] . "</span>
+                                    diedCountryCode : " . $value[9] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    diedCity <span class=\"badge  badge-pill\">" . $value[10] . "</span>
+                                    diedCity : " . $value[10] . "
                                 </li>
                                 <li class=\"list-group-item\">
-                                    gender <span class=\"badge  badge-pill\">" . $value[11] . "</span>
+                                    gender : " . $value[11] . "
                                 </li>
                             </ul>
                         </div>
@@ -115,13 +116,13 @@ function get_prizes($id)
                     <h5>Year : " . $value[1] . "</h5>
                     <ul class=\"list-group\">
                         <li class=\"list-group-item\">
-                            year <span class=\"badge  badge-pill\">" . $value[1] . "</span>
+                            year : " . $value[1] . "
                         </li>
                         <li class=\"list-group-item\">
-                            category <span class=\"badge  badge-pill\">" . $value[2] . "</span>
+                            category : " . $value[2] . "
                         </li>
                         <li class=\"list-group-item\">
-                            share <span class=\"badge  badge-pill\">" . $value[3] . "</span>
+                            share : " . $value[3] . "
                         </li>
                         <li class=\"list-group-item\">
                             motivation : " . $value[4] . "
@@ -159,13 +160,13 @@ function get_affilliation($id, $number)
                     <h5>Affiliation : </h5>
                     <ul class=\"list-group\">
                         <li class=\"list-group-item\">
-                            name <span class=\"badge  badge-pill\">" . $value[1] . "</span>
+                            name : " . $value[1] . "
                         </li>
                         <li class=\"list-group-item\">
-                            city <span class=\"badge  badge-pill\">" . $value[2] . "</span>
+                            city : " . $value[2] . "
                         </li>
                         <li class=\"list-group-item\">
-                            country <span class=\"badge  badge-pill\">" . $value[3] . "</span>
+                            country : " . $value[3] . "
                         </li>
                     </ul>
                 </div>
