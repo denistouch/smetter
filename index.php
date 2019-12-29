@@ -130,8 +130,6 @@ include 'classes/Laureate.php';
                                 id: id
                             },
                         }).done(function (data) {
-                            // console.log(data);
-                            console.log($(this))
                             let removed = '.prize[data-id=' + id + "]";
                             $(removed).remove();
                         }).fail(function () {
@@ -139,7 +137,27 @@ include 'classes/Laureate.php';
                         });
                     }
                 });
-            })
+            });
+            $('#laureate').find('.affiliation').each(function () {
+                $(this).find('.delete-affiliation').click(function () {
+                    let id = $(this).attr('data-id');
+                    if (confirm('Вы уверены что хотите удалить запись?')){
+                        $.ajax({
+                            url: 'ajax/deletePrize.php',
+                            type: 'POST',
+                            data: {
+                                id: id
+                            },
+                        }).done(function (data) {
+                            // console.log(data);
+                            let removed = '.affiliation[data-id=' + id + "]";
+                            $(removed).remove();
+                        }).fail(function () {
+                            console.log('fail')
+                        });
+                    }
+                });
+            });
         }).fail(function () {
             console.log('fail')
         })

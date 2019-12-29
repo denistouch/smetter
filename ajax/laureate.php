@@ -158,8 +158,8 @@ function get_affilliation($id, $number)
         $value = "
         <div class='row'>
             <div class=\"col-sm\">
-                <div class=\"affiliation\">
-                    <h5>Affiliation : </h5>
+                <div class=\"affiliation\" data-id = \"" . $value[0] . "\">
+                    <h5>Affiliation <button  type=\"button\" class=\"btn btn-danger delete-affiliation\" data-id = \"" . $value[0] . "\">X</button></h5>
                     <ul class=\"list-group\">
                         <li class=\"list-group-item\">
                             name : " . $value[1] . "
