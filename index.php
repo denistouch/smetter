@@ -99,9 +99,27 @@ include 'classes/Laureate.php';
             },
         }).done(function (data) {
             data = JSON.parse(data);
-            console.log(data);
+            // console.log(data);
             $('#container').after(data);
             $('#laureate').modal('show');
+            $('#laureate').find('.btn-danger').click(function () {
+                if (confirm('Вы уверены что хотите удалить запись?')){
+                    $.ajax({
+                        url: 'ajax/deleteLaureate.php',
+                        type: 'POST',
+                        data: {
+                            id: index
+                        },
+                    }).done(function (data) {
+                        console.log(data)
+                        $('#laureate').modal('hide');
+                        ajaxLoadTable(0);
+                    }).fail(function () {
+                        console.log('fail')
+                    });
+                }
+            });
+
         }).fail(function () {
             console.log('fail')
         })

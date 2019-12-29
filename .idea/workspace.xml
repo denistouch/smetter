@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="add tables column deleted and rewrite classes and queries for show not removed records">
+    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ajax/deleteLaureate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Delete Laureate.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/laureate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Laureate Prize Affiliation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureate Prize Affiliation.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Laureate Prize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureate Prize.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +45,6 @@
         <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="smetter: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="smetter@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="smetter: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="laureates: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -159,7 +153,7 @@
       <workItem from="1577337971122" duration="23731000" />
       <workItem from="1577369202093" duration="5678000" />
       <workItem from="1577450030343" duration="945000" />
-      <workItem from="1577506016823" duration="44532000" />
+      <workItem from="1577506016823" duration="47809000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -287,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577620380704</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add tables column deleted and rewrite classes and queries for show not removed records">
+      <created>1577621092754</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1577621092754</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

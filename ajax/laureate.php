@@ -1,11 +1,11 @@
 <?php
 if (isset($_POST)) {
-    define('root', $_SERVER['DOCUMENT_ROOT'] . '/smetter/');
     echo json_encode(get_modal($_POST['id']));
 //    print_r(get_prizes($_POST['id']));
 }
 function get_modal($id)
 {
+    define('root', $_SERVER['DOCUMENT_ROOT'] . '/smetter/');
     $mysqli = new mysqli("localhost", "smetter", "Mozart184377!", "smetter");
     if ($mysqli->connect_errno) {
         echo "Не удалось подключиться к MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
@@ -85,6 +85,7 @@ function get_modal($id)
             </div>
             <div class=\"modal-footer\">
                 <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>
+                <button type=\"button\" class=\"btn btn-danger\">Delete</button>
                 <button type=\"button\" class=\"btn btn-primary\">Edit</button>
             </div>
         </div>
