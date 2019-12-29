@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/deleteLaureate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Delete Laureate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/deletePrize.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Delete Prize.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax/laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/laureate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
@@ -153,7 +153,7 @@
       <workItem from="1577337971122" duration="23731000" />
       <workItem from="1577369202093" duration="5678000" />
       <workItem from="1577450030343" duration="945000" />
-      <workItem from="1577506016823" duration="47809000" />
+      <workItem from="1577506016823" duration="53186000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -288,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577621092754</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="laureate - add button delete and request to db for update delete value">
+      <created>1577624632107</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1577624632107</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +325,7 @@
     <MESSAGE value="last version" />
     <MESSAGE value="last version all worked" />
     <MESSAGE value="add tables column deleted and rewrite classes and queries for show not removed records" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tables column deleted and rewrite classes and queries for show not removed records" />
+    <MESSAGE value="laureate - add button delete and request to db for update delete value" />
+    <option name="LAST_COMMIT_MESSAGE" value="laureate - add button delete and request to db for update delete value" />
   </component>
 </project>

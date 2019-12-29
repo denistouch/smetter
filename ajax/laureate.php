@@ -85,7 +85,7 @@ function get_modal($id)
             </div>
             <div class=\"modal-footer\">
                 <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>
-                <button type=\"button\" class=\"btn btn-danger\">Delete</button>
+                <button id='deleteLaureate' type=\"button\" class=\"btn btn-danger\">Delete</button>
                 <button type=\"button\" class=\"btn btn-primary\">Edit</button>
             </div>
         </div>
@@ -111,10 +111,10 @@ function get_prizes($id)
     $i = 0;
     foreach ($result->fetch_all() as $value) {
         $value = "
-        <div class='row'>
-            <div class=\"col-sm\">
-                <div class=\"prize\">
-                    <h5>Year : " . $value[1] . "</h5>
+        <div class='prize' data-id = \"" . $value[0] . "\">
+            <div class='row'>
+                <div class=\"col-sm\">
+                    <h5>Year : " . $value[1] . " <button  type=\"button\" class=\"btn btn-danger delete-prize\" data-id = \"" . $value[0] . "\">X</button></h5>
                     <ul class=\"list-group\">
                         <li class=\"list-group-item\">
                             year : " . $value[1] . "
@@ -131,10 +131,11 @@ function get_prizes($id)
                     </ul>
                 </div>
             </div>
-        </div>";
+        ";
         foreach (get_affilliation($id, $i) as $item) {
             $value .= $item;
         }
+        $value .= "</div>";
         array_push($data_array, $value);
         $i++;
     }

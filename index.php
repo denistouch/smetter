@@ -102,7 +102,7 @@ include 'classes/Laureate.php';
             // console.log(data);
             $('#container').after(data);
             $('#laureate').modal('show');
-            $('#laureate').find('.btn-danger').click(function () {
+            $('#laureate').find('#deleteLaureate').click(function () {
                 if (confirm('Вы уверены что хотите удалить запись?')){
                     $.ajax({
                         url: 'ajax/deleteLaureate.php',
@@ -119,7 +119,27 @@ include 'classes/Laureate.php';
                     });
                 }
             });
-
+            $('#laureate').find('.prize').each(function () {
+                $(this).find('.delete-prize').click(function () {
+                    let id = $(this).attr('data-id');
+                    if (confirm('Вы уверены что хотите удалить запись?')){
+                        $.ajax({
+                            url: 'ajax/deletePrize.php',
+                            type: 'POST',
+                            data: {
+                                id: id
+                            },
+                        }).done(function (data) {
+                            // console.log(data);
+                            console.log($(this))
+                            let removed = '.prize[data-id=' + id + "]";
+                            $(removed).remove();
+                        }).fail(function () {
+                            console.log('fail')
+                        });
+                    }
+                });
+            })
         }).fail(function () {
             console.log('fail')
         })
