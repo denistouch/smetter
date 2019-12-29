@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/laureate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/prizes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ajax_query.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Laureate Prize Affiliation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Laureate Prize.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/Laureate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/print_lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/print_lib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Countries List" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Laureates Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureates Schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Prizes Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Prizes Schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Result in Table" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Result in Table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Result in Table.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +80,13 @@
       <node key="bfdef157-046b-40c1-8bd5-999d5b7fbe28" />
     </expanded>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -62,6 +94,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -69,16 +102,16 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../firstposter" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\smetter\ajax" />
       <recent name="C:\xampp\htdocs\smetter\lib" />
       <recent name="C:\xampp\htdocs\smetter\sql" />
       <recent name="C:\xampp\htdocs\smetter\json" />
       <recent name="C:\xampp\htdocs\smetter\classes" />
-      <recent name="C:\xampp\htdocs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,12 +144,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@97c1de9c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7696dbd1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@97c1de9c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@40a4280a" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7696dbd1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5182cf14" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -138,7 +171,10 @@
       <workItem from="1577069135397" duration="23264000" />
       <workItem from="1577095770645" duration="764000" />
       <workItem from="1577265708759" duration="31756000" />
-      <workItem from="1577337971122" duration="10139000" />
+      <workItem from="1577337971122" duration="23731000" />
+      <workItem from="1577369202093" duration="5678000" />
+      <workItem from="1577450030343" duration="945000" />
+      <workItem from="1577506016823" duration="36748000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -217,7 +253,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577354965928</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="last version">
+      <created>1577355284781</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1577355284781</updated>
+    </task>
+    <task id="LOCAL-00013" summary="last version">
+      <created>1577355305842</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1577355305842</updated>
+    </task>
+    <task id="LOCAL-00014" summary="last version">
+      <created>1577508429068</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577508429068</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

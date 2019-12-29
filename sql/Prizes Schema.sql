@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `smetter`.`prizes`
     `year`                  YEAR            NOT NULL,
     `category`              VARCHAR(100)    NULL,
     `share`                 INT             NOT NULL,
-    `motivation`            VARCHAR(200)    NULL,
+    `motivation`            TEXT            NULL,
     `laureate_id`           INT             NOT NULL,
     `laureate_prize_number` INT             NOT NULL,
     FOREIGN KEY (`laureate_id`) REFERENCES `smetter`.`laureates` (`id`)

@@ -1,16 +1,23 @@
 <?php
 
-function getVariableName($var) {
-    foreach($GLOBALS as $varName => $value) {
+function getVariableName($var)
+{
+    foreach ($GLOBALS as $varName => $value) {
         if ($value === $var) {
-            return '$'.$varName;
+            return '$' . $varName;
         }
     }
     return;
 }
 
-function print_t($input) {
-    $out = '<h1>'.getVariableName($input).' var_type: '.gettype($input).'</h1>';
+function echo_br($input)
+{
+    echo "<br>" . $input . "<br>";
+}
+
+function print_t($input)
+{
+    $out = '<h1>' . getVariableName($input) . ' var_type: ' . gettype($input) . '</h1>';
     $out .= '<table>';
     foreach ($input as $value) {
         $out .= '<tr>';
