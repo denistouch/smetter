@@ -89,8 +89,6 @@ include 'classes/Laureate.php';
         </table>
     </div>
 </div>
-<div id="resultModal">
-</div>
 <script>
     function loadLaureateInfo(index) {
         $.ajax({
@@ -102,7 +100,7 @@ include 'classes/Laureate.php';
         }).done(function (data) {
             data = JSON.parse(data);
             console.log(data);
-            $('#resultModal').html(data);
+            $('#container').after(data);
             $('#laureate').modal('show');
         }).fail(function () {
             console.log('fail')
@@ -133,7 +131,7 @@ include 'classes/Laureate.php';
                 $(this).click(function () {
                     loadLaureateInfo($(this).attr('data-laureate'));
                 })
-            })
+            });
             $('#resultTable').find('.btn-dark').each(function () {
                 $(this).click(function () {
                     $('#resultTable').attr('data-start', $(this).attr('data-start'));

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
+    <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="add tables column deleted and rewrite classes and queries for show not removed records">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Affiliation.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Affiliation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Laureate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Prize.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Prize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Affiliations Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Affiliations Schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Laureates Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureates Schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Prizes Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Prizes Schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Result in Table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Result in Table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Laureate Prize Affiliation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureate Prize Affiliation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/Laureate Prize.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureate Prize.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +159,7 @@
       <workItem from="1577337971122" duration="23731000" />
       <workItem from="1577369202093" duration="5678000" />
       <workItem from="1577450030343" duration="945000" />
-      <workItem from="1577506016823" duration="43651000" />
+      <workItem from="1577506016823" duration="44532000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -284,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577619189898</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add tables column deleted and rewrite classes and queries for show not removed records">
+      <created>1577620380704</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1577620380704</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +316,7 @@
     <MESSAGE value="created workspace function" />
     <MESSAGE value="last version" />
     <MESSAGE value="last version all worked" />
-    <option name="LAST_COMMIT_MESSAGE" value="last version all worked" />
+    <MESSAGE value="add tables column deleted and rewrite classes and queries for show not removed records" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tables column deleted and rewrite classes and queries for show not removed records" />
   </component>
 </project>
