@@ -75,12 +75,12 @@ function get_modal($id)
                         </div>
                     </div>
                     <div class=\"row\" id=\"prizes\">
-                    <h2>Prizes</h2>";
+                        <h2>Prizes</h2>
+                    </div>";
         foreach (get_prizes($id) as $prize) {
             $value .= $prize;
         }
         $value .= "</div>
-                </div>
             </div>
             <div class=\"modal-footer\">
                 <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>
@@ -108,29 +108,31 @@ function get_prizes($id)
     $data_array = array();
     $i = 0;
     foreach ($result->fetch_all() as $value) {
-        $value = "<div class=\"col-sm\">
-        <div class=\"prize\">
-            <h5>Year : " . $value[1] . "</h5>
-            <ul class=\"list-group\">
-                <li class=\"list-group-item\">
-                    year <span class=\"badge  badge-pill\">" . $value[1] . "</span>
-                </li>
-                <li class=\"list-group-item\">
-                    category <span class=\"badge  badge-pill\">" . $value[2] . "</span>
-                </li>
-                <li class=\"list-group-item\">
-                    share <span class=\"badge  badge-pill\">" . $value[3] . "</span>
-                </li>
-                <li class=\"list-group-item\">
-                    motivation : " . $value[4] . "
-                </li>
-            </ul>";
-        foreach (get_affilliation($id,$i) as $item){
+        $value = "
+        <div class='row'>
+            <div class=\"col-sm\">
+                <div class=\"prize\">
+                    <h5>Year : " . $value[1] . "</h5>
+                    <ul class=\"list-group\">
+                        <li class=\"list-group-item\">
+                            year <span class=\"badge  badge-pill\">" . $value[1] . "</span>
+                        </li>
+                        <li class=\"list-group-item\">
+                            category <span class=\"badge  badge-pill\">" . $value[2] . "</span>
+                        </li>
+                        <li class=\"list-group-item\">
+                            share <span class=\"badge  badge-pill\">" . $value[3] . "</span>
+                        </li>
+                        <li class=\"list-group-item\">
+                            motivation : " . $value[4] . "
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>";
+        foreach (get_affilliation($id, $i) as $item) {
             $value .= $item;
         }
-        $value .=
-            "</div>
-    </div>";
         array_push($data_array, $value);
         $i++;
     }
@@ -150,22 +152,28 @@ function get_affilliation($id, $number)
     $result = $mysqli->query($query);
     $data_array = array();
     foreach ($result->fetch_all() as $value) {
-        $value = "<div class=\"affiliation\">
-                <h5>Affiliation : </h5>
-                <ul class=\"list-group\">
-                    <li class=\"list-group-item\">
-                        name <span class=\"badge  badge-pill\">" . $value[1] . "</span>
-                    </li>
-                    <li class=\"list-group-item\">
-                        city <span class=\"badge  badge-pill\">" . $value[2] . "</span>
-                    </li>
-                    <li class=\"list-group-item\">
-                        country <span class=\"badge  badge-pill\">" . $value[3] . "</span>
-                    </li>
-                </ul>
-            </div>";
+        $value = "
+        <div class='row'>
+            <div class=\"col-sm\">
+                <div class=\"affiliation\">
+                    <h5>Affiliation : </h5>
+                    <ul class=\"list-group\">
+                        <li class=\"list-group-item\">
+                            name <span class=\"badge  badge-pill\">" . $value[1] . "</span>
+                        </li>
+                        <li class=\"list-group-item\">
+                            city <span class=\"badge  badge-pill\">" . $value[2] . "</span>
+                        </li>
+                        <li class=\"list-group-item\">
+                            country <span class=\"badge  badge-pill\">" . $value[3] . "</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>";
         array_push($data_array, $value);
     }
     return $data_array;
 }
+
 ?>

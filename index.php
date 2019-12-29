@@ -69,12 +69,7 @@ include 'classes/Laureate.php';
                 </select>
             </li>
         </ul>
-        <input type="hidden" name="action" value="get_table">
-        <input type="hidden" name="category" value="category">
-        <input type="hidden" name="year" value="year">
-        <input type="hidden" name="country" value="country">
         <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-
     </div>
 </nav>
 <div id="container" class="container">
@@ -98,21 +93,12 @@ include 'classes/Laureate.php';
 <div id="resultModal">
 </div>
 <script>
-    // function loadLaureatePrize(index) {
-    //     $.ajax({
-    //         url: 'ajax/prizes.php',
-    //         type: 'POST',
-    //         data: {
-    //             id: index
-    //         }
-    //     })
-    // }
     function loadLaureateInfo(index) {
         $.ajax({
             url: 'ajax/laureate.php',
             type: 'POST',
             data: {
-                id : index
+                id: index
             },
         }).done(function (data) {
             data = JSON.parse(data);
@@ -123,6 +109,7 @@ include 'classes/Laureate.php';
             console.log('fail')
         })
     }
+
     function ajaxLoadTable(append = 0) {
         $.ajax({
             url: 'ajax/table.php',
@@ -150,7 +137,7 @@ include 'classes/Laureate.php';
             })
             $('#resultTable').find('.btn-dark').each(function () {
                 $(this).click(function () {
-                    $('#resultTable').attr('data-start',$(this).attr('data-start'));
+                    $('#resultTable').attr('data-start', $(this).attr('data-start'));
                     console.log($('#resultTable').attr('data-start'));
                     ajaxLoadTable(1);
                 })
@@ -159,6 +146,7 @@ include 'classes/Laureate.php';
             console.log('fail')
         })
     }
+
     $(document).ready(function () {
         ajaxLoadTable();
         console.log($('#resultTable').attr('data-start'));
@@ -170,8 +158,9 @@ include 'classes/Laureate.php';
     });
     $('#search').click(function () {
         console.log($(this).attr('id') + ' click');
-        $('#resultTable').attr('data-start',0);
+        $('#resultTable').attr('data-start', 0);
         ajaxLoadTable();
+        $('.navbar-toggler').click();
     });
 </script>
 </body>

@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de90b259-1392-4c5b-a68b-aa107493b549" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/laureate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/prizes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ajax_query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Laureate Prize Affiliation.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Laureate Prize.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/Laureate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/laureate.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/laureate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/prizes.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/print_lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/print_lib.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Countries List" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Laureates Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Laureates Schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Prizes Schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Prizes Schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Result in Table" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Result in Table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Result in Table.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +152,7 @@
       <workItem from="1577337971122" duration="23731000" />
       <workItem from="1577369202093" duration="5678000" />
       <workItem from="1577450030343" duration="945000" />
-      <workItem from="1577506016823" duration="36748000" />
+      <workItem from="1577506016823" duration="39113000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <created>1577077523221</created>
@@ -274,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577508429068</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="last version all worked">
+      <created>1577612846377</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1577612846377</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +287,7 @@
     <MESSAGE value="date validation library create" />
     <MESSAGE value="created workspace function" />
     <MESSAGE value="last version" />
-    <option name="LAST_COMMIT_MESSAGE" value="last version" />
+    <MESSAGE value="last version all worked" />
+    <option name="LAST_COMMIT_MESSAGE" value="last version all worked" />
   </component>
 </project>
