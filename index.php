@@ -4,6 +4,10 @@ include 'lib/print_lib.php';
 include 'lib/date_valid.php';
 include 'lib/connection.php';
 include 'classes/Laureate.php';
+
+/**
+ * method for first start - create tables and insert values from JSON
+ */
 //create_workspace();
 ?>
 <!doctype html>
@@ -19,6 +23,7 @@ include 'classes/Laureate.php';
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <script src="js/jquery-3.4.1.js"
             crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
@@ -31,7 +36,7 @@ include 'classes/Laureate.php';
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="">
         <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top"
-             alt="">
+             alt="Nobel Laureates">
         Nobel Laureates
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -89,134 +94,5 @@ include 'classes/Laureate.php';
         </table>
     </div>
 </div>
-<script>
-    function loadLaureateInfo(index) {
-        $.ajax({
-            url: 'ajax/laureate.php',
-            type: 'POST',
-            data: {
-                id: index
-            },
-        }).done(function (data) {
-            data = JSON.parse(data);
-            // console.log(data);
-            $('#container').after(data);
-            $('#laureate').modal('show');
-            $('#laureate').find('#deleteLaureate').click(function () {
-                if (confirm('Вы уверены что хотите удалить запись?')){
-                    $.ajax({
-                        url: 'ajax/deleteLaureate.php',
-                        type: 'POST',
-                        data: {
-                            id: index
-                        },
-                    }).done(function (data) {
-                        console.log(data)
-                        $('#laureate').modal('hide');
-                        ajaxLoadTable(0);
-                    }).fail(function () {
-                        console.log('fail')
-                    });
-                }
-            });
-            $('#laureate').find('.prize').each(function () {
-                $(this).find('.delete-prize').click(function () {
-                    let id = $(this).attr('data-id');
-                    if (confirm('Вы уверены что хотите удалить запись?')){
-                        $.ajax({
-                            url: 'ajax/deletePrize.php',
-                            type: 'POST',
-                            data: {
-                                id: id
-                            },
-                        }).done(function (data) {
-                            let removed = '.prize[data-id=' + id + "]";
-                            $(removed).remove();
-                        }).fail(function () {
-                            console.log('fail')
-                        });
-                    }
-                });
-            });
-            $('#laureate').find('.affiliation').each(function () {
-                $(this).find('.delete-affiliation').click(function () {
-                    let id = $(this).attr('data-id');
-                    if (confirm('Вы уверены что хотите удалить запись?')){
-                        $.ajax({
-                            url: 'ajax/deletePrize.php',
-                            type: 'POST',
-                            data: {
-                                id: id
-                            },
-                        }).done(function (data) {
-                            // console.log(data);
-                            let removed = '.affiliation[data-id=' + id + "]";
-                            $(removed).remove();
-                        }).fail(function () {
-                            console.log('fail')
-                        });
-                    }
-                });
-            });
-        }).fail(function () {
-            console.log('fail')
-        })
-    }
-
-    function ajaxLoadTable(append = 0) {
-        $.ajax({
-            url: 'ajax/table.php',
-            type: 'POST',
-            data: {
-                category: $('#category').val(),
-                year: $('#year').val(),
-                country: $('#country').val(),
-                start: $('#resultTable').attr('data-start')
-            },
-        }).done(function (data) {
-            // console.log(data);
-            data = JSON.parse(data);
-            console.log('done');
-            if (append == 0) {
-                $('#resultTable').html(data);
-            } else {
-                $('#resultTable').find('.btn-dark').replaceWith(data);
-            }
-            $('#resultTable').find('.btn-default').each(function () {
-                console.log('row loaded');
-                $(this).click(function () {
-                    loadLaureateInfo($(this).attr('data-laureate'));
-                })
-            });
-            $('#resultTable').find('.btn-dark').each(function () {
-                $(this).click(function () {
-                    $('#resultTable').attr('data-start', $(this).attr('data-start'));
-                    console.log($('#resultTable').attr('data-start'));
-                    ajaxLoadTable(1);
-                })
-            });
-        }).fail(function () {
-            console.log('fail')
-        })
-    }
-
-    $(document).ready(function () {
-        ajaxLoadTable();
-        console.log($('#resultTable').attr('data-start'));
-    });
-    $('#filter').find('select').each(function () {
-        $(this).on('change', function () {
-            console.log($(this).val());
-        })
-    });
-    $('#search').click(function () {
-        console.log($(this).attr('id') + ' click');
-        $('#resultTable').attr('data-start', 0);
-        ajaxLoadTable();
-        if ($('#navbarSupportedContent').hasClass('show')) {
-            $('.navbar-toggler').click();
-        }
-    });
-</script>
 </body>
 </html>
