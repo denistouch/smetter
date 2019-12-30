@@ -23,7 +23,7 @@ include 'classes/Laureate.php';
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <script src="js/jquery-3.4.1.js"
             crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
@@ -48,7 +48,9 @@ include 'classes/Laureate.php';
             <li class="nav-item">
                 <select id="category" class="custom-select">
                     <option>category</option>
+
                     <?php
+                    //переписать под загрузку ajax
                     foreach (get_options('category') as $option)
                         echo $option;
                     ?>
@@ -58,6 +60,7 @@ include 'classes/Laureate.php';
                 <select id="year" class="custom-select">
                     <option>year</option>
                     <?php
+                    //переписать под загрузку ajax
                     foreach (get_options('year') as $option)
                         echo $option;
                     ?>
@@ -67,6 +70,7 @@ include 'classes/Laureate.php';
                 <select id="country" class="custom-select">
                     <option>country</option>
                     <?php
+                    //переписать под загрузку ajax
                     foreach (get_options('country') as $option)
                         echo $option;
                     ?>
@@ -94,5 +98,6 @@ include 'classes/Laureate.php';
         </table>
     </div>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
