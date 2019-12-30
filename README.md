@@ -9,6 +9,7 @@ Nobel Laureates test task for smetter.
 name : smetter
 username : smetter
 password : Mozart184377!
+
 Для развёртки приложения необходимо в файле index.php: 
 раскомментировать метод create_workspace
 выполнить первую загрузку
