@@ -8,14 +8,19 @@ Nobel Laureates test task for smetter.
 Необходимо создать бд:
 
 name : smetter
+
 username : smetter
+
 password : Mozart184377!
 
 
 Для развёртки приложения необходимо в файле index.php: 
 
 раскомментировать метод create_workspace
+
 выполнить первую загрузку
+
 метод закомментровать
+
 выполнить повторную загрузку.
 
