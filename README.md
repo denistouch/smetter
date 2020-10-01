@@ -11,7 +11,7 @@ name : smetter
 
 username : smetter
 
-password : Mozart184377!
+password : ***********
 
 
 Для развёртки приложения необходимо в файле index.php: 
